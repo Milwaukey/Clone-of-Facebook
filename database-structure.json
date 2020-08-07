@@ -1,0 +1,111 @@
+{
+    "_id":"5ebe75a41f3659e83d093770",
+    "email":"a@a.com",
+    "password":"12345",
+    "firstName":"Louise",
+    "lastName":"Jessen",
+    "profileImage":"28516217_10213342947461373_5467591616624579041_o.jpg",
+    "status":1,
+    "unReadMessages":[{},{}],
+    "notifications":[],
+    "friends":[
+        {
+            "_id":"5ec2b05f2e1e1f8501a6a586",
+            "firstName":"Stefanie",
+            "lastName":"Nielsen",
+            "profileImage":"39741008_2153982924874156_5967919029875113984_o.jpg",
+            "status":0
+            
+        },
+        {
+            "_id":"5ec2b0612e1e1f8501a6a587",
+            "firstName":"Martin",
+            "lastName":"Knudsen",
+            "profileImage":"20045294_10209998706833008_6878924046313036475_o.jpg",
+            "status":1,
+        }
+
+    ],
+    "posts":[
+        {
+            "id":"postid8",
+            "created_at":1589632383123,
+            "body":"Soon summer vercation!",
+            "image":"",
+            "likes":5,
+            "liked":0,
+            "comments":[],
+            "author":{
+                "author_id":"5ebe75a41f3659e83d093770",
+                "firstName":"Louise",
+                "lastName":"Jessen",
+                "profileImage":"28516217_10213342947461373_5467591616624579041_o.jpg",
+            }
+        },
+        {
+            "id":"postid9",
+            "created_at":1589632383123,
+            "body":"Svelte is sooooooo AWESOME, i really like it !! *_*",
+            "image":"",
+            "likes":100,
+            "liked":0,
+            "comments":[],
+            "author":{
+                "author_id":"5ebe75a41f3659e83d093770",
+                "firstName":"Louise",
+                "lastName":"Jessen",
+                "profileImage":"28516217_10213342947461373_5467591616624579041_o.jpg",
+            }
+        },
+        {
+            "id":"postid1",
+            "created_at":1589632383123,
+            "body":"Almost done with my Education, wuhuu!",
+            "image":"",
+            "likes":3,
+            "liked":0,
+            "comments":[],
+            "author":{
+                "author_id":"5ec2b05f2e1e1f8501a6a586",
+                "firstName":"Stefanie",
+                "lastName":"Nielsen",
+                "profileImage":"39741008_2153982924874156_5967919029875113984_o.jpg",
+            }
+        },
+        {
+            "id":"postid3",
+            "created_at":1589632383123,
+            "body":"Anyone that can recommend a new headset?",
+            "image":"",
+            "likes":15,
+            "liked":1,
+            "comments":[],
+            "author":{
+                "author_id":"5ec2b0612e1e1f8501a6a587",
+                "firstName":"Martin",
+                "lastName":"Knudsen",
+                "profileImage":"20045294_10209998706833008_6878924046313036475_o.jpg"
+            }
+        }
+    ]
+}
+
+
+
+
+
+
+
+{
+    "body": "Svelte is sooooooo AWESOME, i really like it !! *_*",
+    "image": "",
+    "likes": 0,
+    "liked": false,
+    "comments": [],
+    "author": {
+        "author_id": "5ebe75a41f3659e83d093770",
+        "firstName": "Louise",
+        "lastName": "Jessen",
+        "profileImage": "28516217_10213342947461373_5467591616624579041_o.jpg"
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- FONTS  -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    
+    <style>
+
+        * {margin: 0; padding: 0; box-sizing: 0;}
+
+        body {
+            background: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #loginContainer {
+            height: 400px;
+            width: 300px;
+            padding: 30px 25px;
+            box-sizing: border-box;
+            background: white;
+            box-shadow: 0 1px 7px rgba(155, 155, 155, 0.12), 0 1px 2px rgba(155, 155, 155, 0.12);
+        }
+
+        #loginContainer img {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            margin: 0 auto;
+        }
+
+        #loginContainer h1 {
+            color: #15A5FB;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        form {
+            display: grid;
+            grid-gap: 15px;
+        }
+
+        form input {
+            width: 100%;
+            padding: 5px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #ebe4e4;
+        }
+
+        form button {
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+
+        #loginContainer div {
+            font-size: 13px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        #loginContainer div a {
+            color: #15A5FB;
+            text-decoration: none;
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+    <div id="loginContainer"> 
+
+        <img src="http://localhost:5000/images/assets/logo.svg">
+
+    <h1>Login</h1>
+ 
+    <form id="frmLogin" onsubmit="return false;">
+        <input name="txtEmail" type="text" placeholder="Email">
+        <input name="txtPassword" type="text" placeholder="Password">
+        <button onclick="login()">Submit</button>
+        <div>Don't have an account yet? <a href="signup">Signup today!</a></div>
+    </form>
+    
+    </div>
+
+ 
+<script>
+
+    // Asyncronius function - Always return a promise and has awaits in it
+    async function login(){
+
+        var formData = new FormData( document.querySelector('#frmLogin') )
+
+        let connection = await fetch("login", {
+
+            method  : "POST",
+            body    : formData
+
+        })
+
+        let response = await connection.text()
+
+        if( response == 'Wrong Credentials' ){
+            console.log('Wrong Credentials')
+            return;
+        }
+
+        localStorage.jwt = response
+        window.location.href = "http://localhost/"
+
+
+    }
+
+</script>
+</body>
+</html>
+
