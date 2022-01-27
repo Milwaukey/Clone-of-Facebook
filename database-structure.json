@@ -2,8 +2,8 @@
     "_id":"5ebe75a41f3659e83d093770",
     "email":"a@a.com",
     "password":"12345",
-    "firstName":"Louise",
-    "lastName":"Jessen",
+    "firstName":"fn",
+    "lastName":"ln",
     "profileImage":"28516217_10213342947461373_5467591616624579041_o.jpg",
     "status":1,
     "unReadMessages":[{},{}],
@@ -11,16 +11,16 @@
     "friends":[
         {
             "_id":"5ec2b05f2e1e1f8501a6a586",
-            "firstName":"Stefanie",
-            "lastName":"Nielsen",
+            "firstName":"fn",
+            "lastName":"ln",
             "profileImage":"39741008_2153982924874156_5967919029875113984_o.jpg",
             "status":0
             
         },
         {
             "_id":"5ec2b0612e1e1f8501a6a587",
-            "firstName":"Martin",
-            "lastName":"Knudsen",
+            "firstName":"fn",
+            "lastName":"ln",
             "profileImage":"20045294_10209998706833008_6878924046313036475_o.jpg",
             "status":1,
         }
@@ -37,8 +37,8 @@
             "comments":[],
             "author":{
                 "author_id":"5ebe75a41f3659e83d093770",
-                "firstName":"Louise",
-                "lastName":"Jessen",
+                "firstName":"gn",
+                "lastName":"ln",
                 "profileImage":"28516217_10213342947461373_5467591616624579041_o.jpg",
             }
         },
@@ -52,8 +52,8 @@
             "comments":[],
             "author":{
                 "author_id":"5ebe75a41f3659e83d093770",
-                "firstName":"Louise",
-                "lastName":"Jessen",
+                "firstName":"fn",
+                "lastName":"ln",
                 "profileImage":"28516217_10213342947461373_5467591616624579041_o.jpg",
             }
         },
@@ -67,8 +67,8 @@
             "comments":[],
             "author":{
                 "author_id":"5ec2b05f2e1e1f8501a6a586",
-                "firstName":"Stefanie",
-                "lastName":"Nielsen",
+                "firstName":"fn",
+                "lastName":"ln",
                 "profileImage":"39741008_2153982924874156_5967919029875113984_o.jpg",
             }
         },
@@ -82,8 +82,8 @@
             "comments":[],
             "author":{
                 "author_id":"5ec2b0612e1e1f8501a6a587",
-                "firstName":"Martin",
-                "lastName":"Knudsen",
+                "firstName":"fn",
+                "lastName":"ln",
                 "profileImage":"20045294_10209998706833008_6878924046313036475_o.jpg"
             }
         }
@@ -104,8 +104,8 @@
     "comments": [],
     "author": {
         "author_id": "5ebe75a41f3659e83d093770",
-        "firstName": "Louise",
-        "lastName": "Jessen",
+        "firstName": "fn",
+        "lastName": "ln",
         "profileImage": "28516217_10213342947461373_5467591616624579041_o.jpg"
     }
 }
